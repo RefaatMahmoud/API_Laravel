@@ -1,0 +1,444 @@
+{
+	"id": "0d686d9f-4712-23bf-e65d-7e1d5fe4ecc2",
+	"name": "API Laravel Products and Reviews",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "OAuth",
+			"description": "",
+			"collectionId": "0d686d9f-4712-23bf-e65d-7e1d5fe4ecc2",
+			"order": [
+				"f3aca998-9db8-ddf6-b153-8882114d84a0"
+			],
+			"owner": "3591694",
+			"folders_order": [],
+			"auth": null,
+			"id": "4ebf3128-2d25-15a1-c385-f513ed80f9a6"
+		},
+		{
+			"name": "Products",
+			"description": "",
+			"collectionId": "0d686d9f-4712-23bf-e65d-7e1d5fe4ecc2",
+			"order": [
+				"f016d867-191a-3931-ca1d-bf9cfc78496f",
+				"4b68690d-e6bc-daf5-5060-724c7a86b659",
+				"309e0dd1-3930-1808-7ad7-d7e354ab45a2",
+				"b645348c-00d2-bbc6-fc54-cfcfdd113ec6",
+				"27bede61-5761-bd9b-cbf6-2b2aee61bc0a"
+			],
+			"owner": "3591694",
+			"folders_order": [],
+			"auth": null,
+			"id": "b6975be7-2a64-3645-8b9c-c075f4615a7c"
+		},
+		{
+			"name": "Reviews",
+			"description": "",
+			"collectionId": "0d686d9f-4712-23bf-e65d-7e1d5fe4ecc2",
+			"order": [
+				"e5e9f613-5e61-0295-cfd2-1c50e42a4d20",
+				"9e16e09f-464b-fd56-46ea-8fb56f501952",
+				"6118591d-d9e5-87bf-3841-2a511c92839a",
+				"297c1236-5a53-fbee-1e00-9dc2a0f6f0c7"
+			],
+			"owner": "3591694",
+			"folders_order": [],
+			"auth": null,
+			"id": "4123213a-cccc-b382-aeaa-d4b308c40fc2"
+		}
+	],
+	"folders_order": [
+		"b6975be7-2a64-3645-8b9c-c075f4615a7c",
+		"4123213a-cccc-b382-aeaa-d4b308c40fc2",
+		"4ebf3128-2d25-15a1-c385-f513ed80f9a6"
+	],
+	"timestamp": 1516887125509,
+	"owner": "3591694",
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "27bede61-5761-bd9b-cbf6-2b2aee61bc0a",
+			"headers": "Accept: application/json\ncontent-t: application/json\nAuthorization: {{auth}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-t",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{auth}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/products/102",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "DELETE",
+			"collectionId": "0d686d9f-4712-23bf-e65d-7e1d5fe4ecc2",
+			"data": null,
+			"dataMode": "params",
+			"name": "Delete Item ",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1517017105899,
+			"version": 2,
+			"responses": [],
+			"folder": "b6975be7-2a64-3645-8b9c-c075f4615a7c",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "297c1236-5a53-fbee-1e00-9dc2a0f6f0c7",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: {{auth}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{auth}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/products/4/review/3",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "DELETE",
+			"collectionId": "0d686d9f-4712-23bf-e65d-7e1d5fe4ecc2",
+			"data": null,
+			"dataMode": "params",
+			"name": "Destroy Review",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1517082260065,
+			"version": 2,
+			"responses": [],
+			"folder": "4123213a-cccc-b382-aeaa-d4b308c40fc2",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "309e0dd1-3930-1808-7ad7-d7e354ab45a2",
+			"headers": "Content-Type: application/json\nAccept: application/json\nAuthorization: {{auth}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{auth}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/products",
+			"folder": "b6975be7-2a64-3645-8b9c-c075f4615a7c",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"auth": null,
+			"time": 1517013777476,
+			"name": "Store Product",
+			"description": "",
+			"collectionId": "0d686d9f-4712-23bf-e65d-7e1d5fe4ecc2",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"name\" :\"IPhone 6\",\n\t\"price\": \"150\",\n\t\"stock\" :\"12\" ,\n\t\"discount\": \"12\"\n}"
+		},
+		{
+			"id": "4b68690d-e6bc-daf5-5060-724c7a86b659",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/api/products/4",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "0d686d9f-4712-23bf-e65d-7e1d5fe4ecc2",
+			"data": null,
+			"dataMode": "params",
+			"name": "Specific Product  Data ",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1516887239404,
+			"version": 2,
+			"responses": [],
+			"folder": "b6975be7-2a64-3645-8b9c-c075f4615a7c",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "6118591d-d9e5-87bf-3841-2a511c92839a",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: {{auth}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{auth}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/products/4/review/601",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "PUT",
+			"collectionId": "0d686d9f-4712-23bf-e65d-7e1d5fe4ecc2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Update Review",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1517081897382,
+			"version": 2,
+			"responses": [],
+			"folder": "4123213a-cccc-b382-aeaa-d4b308c40fc2",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"customer\" : \"Refaat\",\n\t\"review\" : \"This is very good device ^_^\",\n\t\"star\" : \"3\"\n}"
+		},
+		{
+			"id": "9e16e09f-464b-fd56-46ea-8fb56f501952",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: {{auth}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{auth}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/products/4/review",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "0d686d9f-4712-23bf-e65d-7e1d5fe4ecc2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Store Review",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1517080862999,
+			"version": 2,
+			"responses": [],
+			"folder": "4123213a-cccc-b382-aeaa-d4b308c40fc2",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"customer\" : \"Refaat\",\n\t\"review\" : \"This is very good\",\n\t\"star\" : \"5\"\n}"
+		},
+		{
+			"id": "b645348c-00d2-bbc6-fc54-cfcfdd113ec6",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: {{auth}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{auth}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/products/103",
+			"folder": "b6975be7-2a64-3645-8b9c-c075f4615a7c",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"auth": null,
+			"time": 1517016990013,
+			"name": "Update Product",
+			"description": "",
+			"collectionId": "0d686d9f-4712-23bf-e65d-7e1d5fe4ecc2",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"name\" :\"IPhone 2 update\",\n\t\"price\": \"150\",\n\t\"stock\" :\"120\" ,\n\t\"discount\": \"12\"\n}"
+		},
+		{
+			"id": "e5e9f613-5e61-0295-cfd2-1c50e42a4d20",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/api/products/4/review",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "0d686d9f-4712-23bf-e65d-7e1d5fe4ecc2",
+			"data": null,
+			"dataMode": "params",
+			"name": "Reviews For Specific Product",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1516887267885,
+			"version": 2,
+			"responses": [],
+			"folder": "4123213a-cccc-b382-aeaa-d4b308c40fc2",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "f016d867-191a-3931-ca1d-bf9cfc78496f",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/oauth/token",
+			"folder": "b6975be7-2a64-3645-8b9c-c075f4615a7c",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"auth": null,
+			"time": 1517013804423,
+			"name": "Product All",
+			"description": "",
+			"collectionId": "0d686d9f-4712-23bf-e65d-7e1d5fe4ecc2",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"grant_type\" : \"password\",\n\t\"client_id\" : \"2\",\n\t\"client_secret\" : \"Gqc6V2L4wmcMvAPIHoTosEVX4d4N07sa4PgLhYxu\",\n\t\"username\" : \"refaat.aish.fciscu1@gmail.com\",\n\t\"password\" : \"1046610466\"\n}"
+		},
+		{
+			"id": "f3aca998-9db8-ddf6-b153-8882114d84a0",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/oauth/token",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "0d686d9f-4712-23bf-e65d-7e1d5fe4ecc2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "GET Token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1517070487639,
+			"version": 2,
+			"responses": [],
+			"folder": "4ebf3128-2d25-15a1-c385-f513ed80f9a6",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"grant_type\":\"password\",\n\t\"client_id\":\"2\",\n\t\"client_secret\":\"I8PD576B4pac2kKuGMzJcW6GlOMBtV0J1TRrQnq0\",\n\t\"username\":\"refaat.aish.fciscu1@gmail.com\",\n\t\"password\":\"1046610466\",\n\t\"_comment\":\"If I get usernmae from DB which seeded so that password :secret\"\n}"
+		}
+	]
+}
