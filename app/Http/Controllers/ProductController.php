@@ -7,6 +7,7 @@ use App\Http\Resources\Product\ProductCollection;
 use App\Http\Resources\Product\ProductResource;
 use App\Model\Product;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class ProductController extends Controller
 {
@@ -58,7 +59,7 @@ class ProductController extends Controller
         //Response for me
         return response([
             "data"  => new ProductResource($product)
-        ],201);
+        ],Response::HTTP_CREATED);
     }
 
     /**
@@ -102,7 +103,7 @@ class ProductController extends Controller
         //Response for me
         return response([
             "data"  => new ProductResource($product)
-        ],201);
+        ],Response::HTTP_CREATED); //path : vendor / symfony / http-foundation / response
     }
 
     /**
@@ -113,6 +114,8 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        //Delete Product
+        $product->delete();
+        return response(NULL,Response::HTTP_NO_CONTENT);
     }
 }
