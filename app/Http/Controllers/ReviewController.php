@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ReviewRequest;
 use App\Http\Resources\ReviewResource;
 use App\Model\Product;
 use App\Model\Review;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
+use Symfony\Component\HttpFoundation\Response;
 
 class ReviewController extends Controller
 {
@@ -52,9 +55,19 @@ class ReviewController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ReviewRequest $request,Product $product)
     {
-        //
+        $reviewObj = new Review();
+        $reviewObj->customer = $request->customer;
+        $reviewObj->review = $request->review;
+        $reviewObj->star = $request->star;
+        $reviewObj->product_id = $product->id;
+        //Save It
+        $reviewObj->save();
+        //response for me
+        return response([
+            "data" => new ReviewResource($reviewObj)
+        ],Response::HTTP_CREATED);
     }
 
     /**
@@ -86,10 +99,17 @@ class ReviewController extends Controller
      * @param  \App\Model\Review  $review
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Review $review)
+    public function update(Request $request, Product $product, Review $review)
     {
-        //
+        //return $review;
+        //$review->product_id = $product->id; Not needed
+        $review->update($request->all());
+        //Response for me
+        return response([
+            "data"  => new ReviewResource($review)
+        ],Response::HTTP_CREATED); //path : vendor / symfony / http-foundation / response
     }
+
 
     /**
      * Remove the specified resource from storage.

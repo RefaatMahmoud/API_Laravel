@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Exceptions\ProductNotBelongToUser;
 use App\Http\Requests\ProductRequest;
 use App\Http\Resources\Product\ProductCollection;
@@ -49,8 +48,6 @@ class ProductController extends Controller
      */
     public function store(ProductRequest $request)
     {
-        //return $request->all();
-        //Create Object
         $product = new Product();
         $product->name = $request->name;
         $product->price = $request->price;
@@ -95,7 +92,6 @@ class ProductController extends Controller
 
     /**
      * Update the specified resource in storage.
-     *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Model\Product  $product
      * @return \Illuminate\Http\Response
@@ -130,5 +126,4 @@ class ProductController extends Controller
         $product->delete();
         return response(NULL,Response::HTTP_NO_CONTENT);
     }
-
 }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 27, 2018 at 06:01 PM
+-- Generation Time: Jan 27, 2018 at 08:36 PM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -823,7 +823,6 @@ INSERT INTO `reviews` (`id`, `customer`, `review`, `star`, `product_id`, `create
 (497, 'dolores', 'Accusantium sit nam natus cumque quae. Quia eveniet exercitationem vel voluptates molestias eligendi. Pariatur ipsum ut ipsa nostrum sint officia nostrum.', 4, 39, '2018-01-28 00:29:59', '2018-01-28 00:29:59'),
 (498, 'officia', 'Quas expedita quidem culpa vel repellat alias harum. Vel veniam ullam architecto ratione sit. In dolorum odit quia distinctio.', 0, 85, '2018-01-28 00:29:59', '2018-01-28 00:29:59'),
 (499, 'esse', 'Nam vel tempora et minus. Sit in inventore ab iste consectetur ipsa. Ut exercitationem eligendi nesciunt corporis minima rerum.', 4, 46, '2018-01-28 00:29:59', '2018-01-28 00:29:59'),
-(500, 'quae', 'Voluptate possimus sint ipsa aut autem cum. Perspiciatis dolore magnam repellendus voluptatem. Aut rerum velit est et consequatur reiciendis minus rerum.', 2, 99, '2018-01-28 00:29:59', '2018-01-28 00:29:59'),
 (501, 'nisi', 'Maxime asperiores voluptas quidem doloremque officiis. Sed aut molestiae rerum fugit et suscipit. Assumenda in quos non quo.', 0, 81, '2018-01-28 00:29:59', '2018-01-28 00:29:59'),
 (502, 'dolore', 'Aut quia modi eaque doloremque rerum. Suscipit voluptas dolore consequatur sit. Assumenda ab at eos provident. Itaque corporis voluptatem et totam magni.', 4, 27, '2018-01-28 00:30:00', '2018-01-28 00:30:00'),
 (503, 'quos', 'Quidem architecto aspernatur quisquam nemo occaecati sed laudantium. Illum voluptatem et sequi asperiores similique laudantium. Cupiditate voluptatem quas adipisci placeat.', 5, 76, '2018-01-28 00:30:00', '2018-01-28 00:30:00'),
@@ -923,7 +922,9 @@ INSERT INTO `reviews` (`id`, `customer`, `review`, `star`, `product_id`, `create
 (597, 'omnis', 'Facere tempora reprehenderit rerum nisi qui et est necessitatibus. Est sit commodi ipsam vero ut sunt. Dolorem repellat vero nihil qui dicta. Amet quia modi dolores consectetur.', 0, 10, '2018-01-28 00:30:05', '2018-01-28 00:30:05'),
 (598, 'aut', 'Distinctio ad tenetur voluptatem possimus consequatur quis placeat minima. Eaque quisquam et at et reiciendis veniam ipsa. Veritatis totam et quos corporis voluptate commodi. Esse dolorum molestiae nihil voluptas.', 0, 22, '2018-01-28 00:30:05', '2018-01-28 00:30:05'),
 (599, 'sed', 'Pariatur dicta quibusdam quidem eum. Et incidunt non ut ad sit eum quaerat. Non repellendus adipisci illo maiores.', 1, 42, '2018-01-28 00:30:05', '2018-01-28 00:30:05'),
-(600, 'architecto', 'Eveniet ab libero et natus totam ex aut. Minima ullam aperiam iste illum perspiciatis vel officiis. Iste sed perferendis nobis sit consequatur occaecati. Aut quibusdam nemo molestiae eveniet.', 3, 95, '2018-01-28 00:30:05', '2018-01-28 00:30:05');
+(600, 'architecto', 'Eveniet ab libero et natus totam ex aut. Minima ullam aperiam iste illum perspiciatis vel officiis. Iste sed perferendis nobis sit consequatur occaecati. Aut quibusdam nemo molestiae eveniet.', 3, 95, '2018-01-28 00:30:05', '2018-01-28 00:30:05'),
+(601, 'Refaat', 'This is very good device ^_^', 3, 4, '2018-01-28 03:15:48', '2018-01-28 03:34:38'),
+(602, 'Mohamed', 'This is very good', 5, 4, '2018-01-28 03:24:34', '2018-01-28 03:24:34');
 
 -- --------------------------------------------------------
 
@@ -1056,7 +1057,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `reviews`
 --
 ALTER TABLE `reviews`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=601;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=603;
 --
 -- AUTO_INCREMENT for table `users`
 --
