@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Exceptions\ProductNotBelongToUser;
 use App\Http\Requests\ProductRequest;
 use App\Http\Resources\Product\ProductCollection;
 use App\Http\Resources\Product\ProductResource;
 use App\Model\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
 class ProductController extends Controller
@@ -54,6 +56,7 @@ class ProductController extends Controller
         $product->price = $request->price;
         $product->discount = $request->discount;
         $product->stock = $request->stock;
+        $product->user_id = $request->user_id;
         //Save Data
         $product->save();
         //Response for me
@@ -99,11 +102,20 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-         $product->update($request->all());
-        //Response for me
-        return response([
-            "data"  => new ProductResource($product)
-        ],Response::HTTP_CREATED); //path : vendor / symfony / http-foundation / response
+        if(Auth::user()->id == $product->user_id)
+        {
+            $product->update($request->all());
+            //Response for me
+            return response([
+                "data"  => new ProductResource($product)
+            ],Response::HTTP_CREATED); //path : vendor / symfony / http-foundation / response
+        }
+        else
+        {
+            return response([
+                "data" => "You not owner for this product"
+            ]);
+        }
     }
 
     /**
@@ -118,4 +130,5 @@ class ProductController extends Controller
         $product->delete();
         return response(NULL,Response::HTTP_NO_CONTENT);
     }
+
 }

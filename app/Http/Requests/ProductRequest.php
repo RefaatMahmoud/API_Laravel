@@ -27,7 +27,8 @@ class ProductRequest extends FormRequest
             "name" => "required|max:255|unique:products",
             "price" => "required|max:100",
             "discount" => "required|max:5",
-            "stock" => "required|max:5" //max is number of digits
+            "stock" => "required|max:5", //max is number of digits
+            "user_id" => "required"
         ];
     }
 }
