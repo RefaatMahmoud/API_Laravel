@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1>This is API project</h1>
 <h5>Products API</h5>
 <ul>
@@ -21,6 +20,4 @@
   <li>used pagination  in this API</li>
   <li>Provide for tokens and Auth for each user in API</li>
 </ul>
-=======
-Update 
->>>>>>> 38cb4f409a9729722d01d797ee1f2334a2b840ae
+
