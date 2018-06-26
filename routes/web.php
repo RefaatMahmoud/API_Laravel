@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/hello',function(\Illuminate\Http\Request $request){
     return $request->all();
 });

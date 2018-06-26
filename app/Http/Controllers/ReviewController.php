@@ -25,7 +25,6 @@ class ReviewController extends Controller
         //Return All Data in DB in My resource api After my Customization to see it for end user
         return ReviewResource::collection($product->reviews);
 
-
         /*
          * wii return All Reviews in DB
          * return Review::all()
@@ -35,8 +34,6 @@ class ReviewController extends Controller
         $reviews = DB::table('reviews')->where('product_id','=',$product->id)->get();
         return $reviews;
         */
-
-
     }
 
     /**

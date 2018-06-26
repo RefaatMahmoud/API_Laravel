@@ -24,9 +24,10 @@ class ProductController extends Controller
      */
     public function index()
     {
-        // return Product::all();
+         //return Product::all();
         //I already removed Collection word from ProductCollection and from use ...
         // return ProductResource::collection(Product::all());
+        //return ProductCollection::collection(Product::paginate(10));
         return ProductCollection::collection(Product::all());
     }
 
@@ -70,13 +71,13 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
+        return new ProductResource($product);
         /*
          *  will display ID from ProductCollection
          * // return $product;
          * */
         //Will Use ProductResource
         //return new ProductCollection($product);
-        return new ProductResource($product);
     }
 
     /**
